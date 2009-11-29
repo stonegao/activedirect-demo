@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>ActiveDirect Demo</title>
+    <link href="/javascripts/ext/resources/css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/javascripts/ext/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="/javascripts/ext/ext-all-debug.js"></script>
+    
+
+    <script type="text/javascript">
+        Ext.ns("App");
+        Ext.onReady(function() { 
+            Ext.Direct.addProvider(App.REMOTING_API);
+        });
+    </script>
+    <script type="text/javascript" src="/direct_api"></script>
+  </head>
+  <body>
+
+
+  </body>
+</html>
