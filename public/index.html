@@ -13,6 +13,7 @@
 
     <script type="text/javascript">
       Ext.onReady(function() {
+        REMOTING_API.enableBuffer = 500;
         Ext.Direct.addProvider(REMOTING_API);
       });
     </script>
@@ -24,18 +25,18 @@
     <h2> Examples ( Try it in your firebug console ) </h2>
     <br/>
     <pre>
-      App.models.Category.create( { name : ‘ruby’ }  )
-      App.models.Category.update(2,  { name : ‘ruby books’ } )
-      App.models.Category.update_all({ name : ‘ruby books’ },  “ name LIKE ‘%ruby%’ ” )
+      App.models.Category.create( { name : 'ruby' }  )
+      App.models.Category.update(2,  { name : 'ruby books' } )
+      App.models.Category.update_all({ name : 'ruby books' },  " name LIKE '%ruby%' " )
       App.models.Category.all()
       App.models.Category.find( 2 )
-      App.models.Category.find_every( { conditions : “name LIKE ‘%java%’ “ } )
-      App.models.Category.exists( [“ name LIKE ? “,  ‘%java%’ ] )
+      App.models.Category.find_every( { conditions : "name LIKE '%java%' " } )
+      App.models.Category.exists( [" name LIKE ? ",  '%java%' ] )
       App.models.Category.first()
       App.models.Category.last()
       App.models.Category.count()
       App.models.Category.delete( 2 )
-      App.models.Category.delete_all( “ name LIKE  ‘%java%’  “  )
+      App.models.Category.delete_all( " name LIKE  '%java%'  "  )
     </pre>
     <br/>
     <a href="http://github.com/stonegao/active-direct"> http://github.com/stonegao/active-direct </a>
